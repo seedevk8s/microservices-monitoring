@@ -275,3 +275,45 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2024-05-05 06:39:18.877  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2024-05-05 06:44:18.882  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2024-05-05 06:49:18.894  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 06:54:18.896  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 06:59:18.898  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:04:18.903  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:09:18.907  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:14:18.908  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:19:18.915  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:24:18.922  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:28:05.110  INFO 4371 --- [http-nio-9092-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-05 07:28:05.112  INFO 4371 --- [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-05 07:28:05.175  INFO 4371 --- [http-nio-9092-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 63 ms
+2024-05-05 07:28:05.407  INFO 4371 --- [http-nio-9092-exec-2] c.t.p.controller.PaymentController       : PaymentController doPayment request {"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:05.557 DEBUG 4371 --- [http-nio-9092-exec-2] org.hibernate.SQL                        : call next value for hibernate_sequence
+2024-05-05 07:28:05.695 DEBUG 4371 --- [http-nio-9092-exec-2] org.hibernate.SQL                        : insert into payment_tbl (amount, order_id, payment_status, transaction_id, payment_id) values (?, ?, ?, ?, ?)
+2024-05-05 07:28:05.719  INFO 4371 --- [http-nio-9092-exec-2] c.t.p.controller.PaymentController       : PaymentController doPayment response {"paymentId":1,"paymentStatus":"SUCESS","transactionId":"e53a30c8-f4da-4edc-8420-8af60fbb2c13","orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:09.436  INFO 4371 --- [http-nio-9092-exec-3] c.t.p.controller.PaymentController       : PaymentController doPayment request {"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:09.437 DEBUG 4371 --- [http-nio-9092-exec-3] org.hibernate.SQL                        : call next value for hibernate_sequence
+2024-05-05 07:28:09.438 DEBUG 4371 --- [http-nio-9092-exec-3] org.hibernate.SQL                        : insert into payment_tbl (amount, order_id, payment_status, transaction_id, payment_id) values (?, ?, ?, ?, ?)
+2024-05-05 07:28:09.440  INFO 4371 --- [http-nio-9092-exec-3] c.t.p.controller.PaymentController       : PaymentController doPayment response {"paymentId":2,"paymentStatus":"SUCESS","transactionId":"3dc45909-d8ce-49c7-8cd7-6e952323ff09","orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:10.487  INFO 4371 --- [http-nio-9092-exec-4] c.t.p.controller.PaymentController       : PaymentController doPayment request {"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:10.489 DEBUG 4371 --- [http-nio-9092-exec-4] org.hibernate.SQL                        : call next value for hibernate_sequence
+2024-05-05 07:28:10.490 DEBUG 4371 --- [http-nio-9092-exec-4] org.hibernate.SQL                        : insert into payment_tbl (amount, order_id, payment_status, transaction_id, payment_id) values (?, ?, ?, ?, ?)
+2024-05-05 07:28:10.492  INFO 4371 --- [http-nio-9092-exec-4] c.t.p.controller.PaymentController       : PaymentController doPayment response {"paymentId":3,"paymentStatus":"SUCESS","transactionId":"675ee2c4-3602-4908-a511-48a406f0dbcb","orderId":1111,"amount":555000.0} 
+2024-05-05 07:28:18.662  INFO 4371 --- [http-nio-9092-exec-5] c.t.p.controller.PaymentController       : PaymentController doPayment request {"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":1112,"amount":555000.0} 
+2024-05-05 07:28:18.664 DEBUG 4371 --- [http-nio-9092-exec-5] org.hibernate.SQL                        : call next value for hibernate_sequence
+2024-05-05 07:28:18.665 DEBUG 4371 --- [http-nio-9092-exec-5] org.hibernate.SQL                        : insert into payment_tbl (amount, order_id, payment_status, transaction_id, payment_id) values (?, ?, ?, ?, ?)
+2024-05-05 07:28:18.668  INFO 4371 --- [http-nio-9092-exec-5] c.t.p.controller.PaymentController       : PaymentController doPayment response {"paymentId":4,"paymentStatus":"SUCESS","transactionId":"e3d61bc1-fbea-4b51-80df-9fb6b3032bc6","orderId":1112,"amount":555000.0} 
+2024-05-05 07:28:22.624  INFO 4371 --- [http-nio-9092-exec-6] c.t.p.controller.PaymentController       : PaymentController doPayment request {"paymentId":0,"paymentStatus":null,"transactionId":null,"orderId":1113,"amount":555000.0} 
+2024-05-05 07:28:22.624 DEBUG 4371 --- [http-nio-9092-exec-6] org.hibernate.SQL                        : call next value for hibernate_sequence
+2024-05-05 07:28:22.625 DEBUG 4371 --- [http-nio-9092-exec-6] org.hibernate.SQL                        : insert into payment_tbl (amount, order_id, payment_status, transaction_id, payment_id) values (?, ?, ?, ?, ?)
+2024-05-05 07:28:22.629  INFO 4371 --- [http-nio-9092-exec-6] c.t.p.controller.PaymentController       : PaymentController doPayment response {"paymentId":5,"paymentStatus":"FAILURE","transactionId":"4ea7b140-9acf-4e83-94cf-30193dcc410e","orderId":1113,"amount":555000.0} 
+2024-05-05 07:29:18.925  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:34:18.930  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:39:18.934  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:44:18.940  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:49:18.944  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:54:18.948  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 07:59:18.954  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 08:04:18.955  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 08:09:18.960  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 08:14:18.961  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 08:19:18.964  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-05-05 08:24:18.967  INFO 4371 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -16,10 +16,10 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./Microservices-v2/logstash.yml:/usr/share/logstash/config/logstash.yml
-      - ./Microservices-v2:/usr/share/logstash/config
-      - ./Microservices-v2/order-service/logs:/usr/share/logstash/logs
-      - ./Microservices-v2/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - $PWD/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - $PWD:/usr/share/logstash/config
+      - $PWD/order-service/logs:/usr/share/logstash/logs
+      - $PWD/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     command: ["-f", "/usr/share/logstash/config/logstash.conf"]
     depends_on:
       - elasticsearch
